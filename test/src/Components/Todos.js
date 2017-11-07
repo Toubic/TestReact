@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
+import Todo from './Todo'
 
 class Todos extends Component {
-
 
     constructor(){
         super();
@@ -31,13 +31,12 @@ class Todos extends Component {
     }
 
     render() {
+
         return (
             <div className="Todos">
                 <h2>Todos:</h2>
                 <ul>
-                    <li>{this.state.todos[0].todo} ({this.state.todos[0].type})</li>
-                    <li>{this.state.todos[1].todo} ({this.state.todos[1].type})</li>
-                    <li>{this.state.todos[2].todo} ({this.state.todos[2].type})</li>
+                    <Todo todos={this.state.todos} />
                 </ul>
             </div>
         );

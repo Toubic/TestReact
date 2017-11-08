@@ -4,7 +4,7 @@ class Todo extends Component {
 
     render() {
         return (
-                    <li>{this.props.todos[0].todo} ({this.props.todos[0].type})</li>
+                    <li>{this.props.todo.todo} ({this.props.todo.type})</li>
         );
     }
 }

@@ -11,6 +11,7 @@ class Todos extends Component {
     }
 
     componentWillMount(){
+
         this.setState({
             todos: [
                 {
@@ -31,12 +32,19 @@ class Todos extends Component {
     }
 
     render() {
+        let todos;
 
+        if(this.state.todos){
+            todos = this.state.todos.map(todo =>{
+
+                return(<Todo todo={todo}/>);
+            });
+        }
         return (
             <div className="Todos">
                 <h2>Todos:</h2>
                 <ul>
-                    <Todo todos={this.state.todos} />
+                    {todos}
                 </ul>
             </div>
         );

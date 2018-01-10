@@ -15,16 +15,24 @@ class Todos extends Component {
         this.setState({
             todos: [
                 {
-                    todo: "Todo 1",
-                    type: "Type 1"
+                    todo: "Sätt upp en hemsida med Wordpress",
+                    type: "Task 1"
                 },
                 {
-                    todo: "Todo 2",
-                    type: "Type 2"
+                    todo: "Välj tema",
+                    type: "Task 2"
                 },
                 {
-                    todo: "Todo 3",
-                    type: "Type 3"
+                    todo: "Installera plugins",
+                    type: "Task 3"
+                },
+                {
+                    todo: "Fyll på med innehåll på hemsidan",
+                    type: "Task 4"
+                },
+                {
+                    todo: "Great success!",
+                    type: "Task 5"
                 }
             ]
         }
